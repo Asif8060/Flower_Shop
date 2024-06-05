@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Flower_Shop/static/css/main.d4fa60e3.css",
+    "main.js": "/Flower_Shop/static/js/main.08238b7e.js",
+    "static/media/banner2.jpg": "/Flower_Shop/static/media/banner2.1af5898b551fea6e6199.jpg",
+    "static/media/banner3.jpg": "/Flower_Shop/static/media/banner3.fba14d4918a7bfbbe44e.jpg",
+    "static/media/banner1.jpg": "/Flower_Shop/static/media/banner1.45ee013640c665df0ee0.jpg",
+    "static/media/flourist.png": "/Flower_Shop/static/media/flourist.5dfc28dddc9c0d34118b.png",
+    "static/media/bouquet.webp": "/Flower_Shop/static/media/bouquet.7ef85af5a5135ccdfb03.webp",
+    "index.html": "/Flower_Shop/index.html",
+    "main.d4fa60e3.css.map": "/Flower_Shop/static/css/main.d4fa60e3.css.map",
+    "main.08238b7e.js.map": "/Flower_Shop/static/js/main.08238b7e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4fa60e3.css",
+    "static/js/main.08238b7e.js"
+  ]
+}
