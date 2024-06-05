@@ -1,0 +1,369 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jacquard+12&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    color: black;
+    overflow-x: hidden;
+}
+
+.home {
+    padding: 20px 140px;
+}
+
+#b1 {
+    width: 125px;
+    position: fixed;
+    top: -20px;
+    left: 0;
+    z-index: 3;
+}
+#b2 {
+    width: 125px;
+    position: fixed;
+    top: -20px;
+    right: 0;
+    z-index: 3;
+}
+
+#strip {
+    width: 100vw;
+    height: 20px;
+    background-color: red;
+    z-index: 30000;
+}
+
+#navbar {
+    width: 100%;
+    height: 70px;
+    padding: 20px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6DC5D1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} 
+
+#navbar > #logo {
+    color: indianred;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#navbar > #logo > h1 > #shop {
+    color: blueviolet;
+    font-family: "Jacquard 12", system-ui;
+}
+
+#navbar > #search {
+    width: 450px;
+    height: 40px;
+    position: relative;
+}
+#navbar > #search input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(83, 79, 79);
+    border-radius: 8px;
+}
+#navbar > #search > #searchIcon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+}
+
+#navbar > #custDetail {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+}
+#navbar > #custDetail > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#navbar > #custDetail > div:hover {
+    color: gray;
+}
+
+#collections {
+    position: absolute;
+    width: 100vw;
+    height: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#collections button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: gray;
+}
+#collections button:hover {
+    color: black;
+}
+
+.mainPage .banner {
+    margin-top: 110px;
+    width: 100%;
+}
+.banner img {
+    width: 100%;
+    cursor: pointer;
+}
+.mainPage .features {
+    width: 100vw;
+    background-color: aliceblue;
+    margin-left: -140px;
+    padding: 20px 80px;
+    margin-block: 20px;
+}
+.mainPage .features p {
+    display: inline-block;
+    color: black;
+    font-size: 1.7rem;
+    margin: 20px 0 0 50px;
+    font-weight: 800;
+    border-bottom: 5px solid rgb(129, 5, 246);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mainPage .ads {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage .ads img {
+    width: 40%;
+    cursor: pointer;
+}
+.mainPage .ads img:nth-child(2) {
+    padding: 40px;
+}
+.mainPage .delivery> p {
+     text-align: center;
+     font-size: 1.4rem;
+     padding-bottom: 20px;
+}
+.mainPage .flowerDelivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainPage .flowerDelivery .flowers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.mainPage .flowerDelivery .flowers div {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.mainPage .flowerDelivery img {
+    padding: 10px;
+    height: 100%;
+    border-radius: 30px;
+}
+.mainPage .flowerDelivery img:hover {
+    transform: scale(1.1);
+}
+
+.mainPage .flowerLove {
+    margin-top: 50px;
+}
+.mainPage .flowerLove> p {
+    color: gray;
+}
+.mainPage .flowerLove .greet {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.mainPage .flowerLove .greet div {
+    border: 1px solid gray;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.mainPage .flowerLove .greet> p {
+    margin-top: 10px;
+}
+.mainPage .flowerLove .greet img {
+    width: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.mainPage .design {
+    margin-top: 40px;
+    position: relative;
+}
+.mainPage .design::before {
+    content: '<';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.mainPage .design::after {
+    content: '>';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.mainPage .design> p {
+    color: gray;
+}
+.mainPage .design .cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    margin-top: 20px;
+}
+
+.mainPage .design .cards .card {
+    width: 290px;
+    height: 440px;
+    border: 1px solid gray;
+    border-radius: 40px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.mainPage .design .cards .card>div {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.mainPage .design .cards .card>div img {
+    height: 100%;
+}
+.mainPage .design .cards .card div img:hover {
+    transform: scale(1.1);
+}
+.mainPage .design .cards .card p {
+    margin: 10px;
+}
+.mainPage .design .cards .card .price {
+    font-weight: 700;
+    margin-left: 10px;
+}
+.mainPage .design .cards .card .rating {
+    display: inline;
+}
+.mainPage .design .cards .card button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    background-color: rgb(247, 7, 47);
+    color: white;
+}
+.mainPage .design .cards .card button:hover {
+    background-color: rgb(221, 18, 93);
+}
+
+
+.specialFlowers {
+    margin-block: 40px 20px;
+    padding: 20px;
+    background-color: rgb(249, 245, 239);
+    border-radius: 40px;
+}
+.specialFlowers h2,.specialFlowers p {
+    text-align: center;
+}
+.specialFlowers .specialCards {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 40px;
+}
+.specialFlowers .specialCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-bottom: 20px;
+    height: 410px;
+    cursor: pointer;
+}
+.specialFlowers .specialCard>p {
+    margin-top: 20px;
+}
+.specialFlowers .specialCard div {
+    width: 350px;
+    height: 100%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    overflow: hidden;
+}
+.specialFlowers .specialCard div img {
+    width: 100%;
+}
+.specialFlowers .specialCard div img:hover {
+    transform: scale(1.1);
+}
